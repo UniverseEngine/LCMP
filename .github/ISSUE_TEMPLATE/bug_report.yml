@@ -1,0 +1,52 @@
+name: Bug report
+description: Create a report to help us improve
+labels: bug
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Describe the bug
+      description: Please provide a clear and concise description of what the bug is.
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
+    id: to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Please provide clear steps to reproduce the behaviour.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: version
+    attributes:
+      label: Version
+      description: |
+        Please provide the version of the LCMP client and/or server you are running.
+
+        Client: You can open the client console using the `F8` key on your keyboard and using the `ver` command to get the version.
+        Server: You can use the `ver` command in the server console to get the version. 
+
+        If you are running Wine, please say so, and say if you're using Linux or MacOS.
+
+        Which operating system the server is running on, if relevant.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: |
+        If available, please provide any other additional context, such as screenshots or videos, or links to other relevant issues, pull requests or documents that can help others troubleshoot your issue more accurately and efficiently.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: |
+        Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+
+        **Warning!** Do not post any personal information or sensitive logs here. You are responsible for redacting any personal information from the logs. 
+      render: shell
